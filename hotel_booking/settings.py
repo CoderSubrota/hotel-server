@@ -166,7 +166,6 @@ STATIC_URL = 'static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(days=3),  
     'REFRESH_TOKEN_LIFETIME': timedelta(days=7), 
@@ -181,6 +180,7 @@ CORS_ALLOWED_ORIGINS = [
     'https://phimart-hotel.netlify.app',
     'https://phimart-hotel-server.vercel.app/'
 ]
+
 CSRF_TRUSTED_ORIGINS = [
     'https://phimart-hotel.netlify.app',
     'https://phimart-hotel-server.vercel.app/'
@@ -189,6 +189,6 @@ CSRF_TRUSTED_ORIGINS = [
 CORS_ALLOW_ALL_ORIGINS = True
 
 STRIPE_TEST_SECRET_KEY= os.getenv('STRIPE_TEST_SECRET_KEY')
-
-STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+STATIC_FILES_DIRS = os.path.join(BASE_DIR,'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles_build','static')
 
