@@ -173,12 +173,11 @@ SIMPLE_JWT = {
 }
 
 CORS_ALLOWED_ORIGINS = [
-    'https://phimart-hotel.netlify.app',
+    'https://phimart-hotel-client-fggl.vercel.app/',
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'https://phimart-hotel.netlify.app',
-    'https://phimart-hotel-server.vercel.app/'
+   'https://phimart-hotel-server.vercel.app/'
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
