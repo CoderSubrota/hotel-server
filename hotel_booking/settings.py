@@ -22,7 +22,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
-WSGI_APPLICATION = 'hotel_booking.wsgi.app'
 
 # Application definition
 
