@@ -22,6 +22,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+WSGI_APPLICATION = 'hotel_booking.wsgi.app'
 
 # Application definition
 
@@ -190,3 +191,4 @@ CORS_ALLOW_ALL_ORIGINS = True
 STRIPE_TEST_SECRET_KEY= os.getenv('STRIPE_TEST_SECRET_KEY')
 
 STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
+
