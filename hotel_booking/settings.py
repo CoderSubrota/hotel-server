@@ -168,8 +168,14 @@ SIMPLE_JWT = {
     'AUTH_HEADER_TYPES': ('Bearer',),
 }
 
+
+
 CSRF_TRUSTED_ORIGINS = [
-   'https://phimart-hotel-client-fggl.vercel.app/'
+    'https://hotel-server-r5s5.onrender.com'
+]
+
+CORS_ALLOWED_ORIGINS = [
+    'https://hotel-server-r5s5.onrender.com'
 ]
 
 CORS_ALLOW_ALL_ORIGINS = True
